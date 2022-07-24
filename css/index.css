@@ -169,12 +169,17 @@ ul {
 }
 
 /* Feautures */
+/* #features {
+  margin: 0 auto;
+  width: 100%;
+} */
 
-.box {
+#features .box {
   width: 33%;
   display: inline-block;
   padding: 50px;
   text-align: center;
+  float: none;
 }
 
 .box i {
@@ -190,25 +195,6 @@ ul {
 
 .clr {
   clear: both;
-}
-
-@media screen and (max-width: 980px) {
-  .info-img {
-    float: none;
-    display: block;
-    width: 100%;
-  }
-  .info-img {
-    float: none;
-    display: block;
-    width: 100%;
-  }
-  .box {
-    width: 100%;
-  }
-}
-
-#about-info {
 }
 
 .info-right {
@@ -235,7 +221,7 @@ ul {
 }
 
 #tesimonials {
-  min-height: 600px;
+  min-height: 100%;
   background: url("../image_resources/test-bg.jpg") no-repeat center
     center/cover;
 }
@@ -287,12 +273,12 @@ ul {
 }
 
 #contact-info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
   width: 100%;
-  justify-content: space-evenly;
+  text-align: center;
+}
+#contact-info .box {
+  width: 33%;
+  display: inline-block;
 }
 
 .container-footer {
